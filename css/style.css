@@ -1,42 +1,49 @@
-/* Page 1 style.css */
+/* Page 1 style.css 
+Home page and Statistics was made by Nerijus Kmitas x24170232*/
 
+
+/* Base styling for every page */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif; /* font style */
   margin: 0;
-  background-color: #fff8f0;
-  color: #333;
+  color: #333; /* font colour */
 }
 
+/* Header section */
 .header {
-  background-color: #f9c468;
+  background-color: #f9c468; /* background colour */
   display: flex;
   align-items: center;
   padding: 20px;
   justify-content: center;
-  position: relative;
   flex-wrap: wrap;
 }
 
+/* Main logo position */
 .header-left {
   position: absolute;
   left: 20px;
   top: 5px;
 }
 
+/* Header text position */
 .header-center {
   text-align: center;
 }
 
+/* Nav bar position to move from one page to another */
 .header-center h1 {
   font-size: 28px;
   margin: 0;
   color: #5a3200;
 }
 
+/* Adjust nav bar from the top */
 .nav-links {
   margin-top: 10px;
 }
 
+/* Nav bar text size,colour and spacing*/
 .nav-links a {
   margin: 0 8px;
   text-decoration: none;
@@ -44,10 +51,12 @@ body {
   font-size: 14px;
 }
 
-.logo {
+/* Logo size adjustment */
+.mainLogo {
   width: 90px;
 }
 
+/* Text size adjustment */
 .text {
   font-size: 20px;
   line-height: 1.5;
@@ -56,21 +65,18 @@ body {
   margin: 10px auto 20px;
 }
 
+/* Chart display adjustment */
 .chart-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 400px;
+  gap: 200px; /* space between chart and coloured text */
   flex-wrap: wrap;
   margin: 30px auto;
   max-width: 900px;
 }
 
-.chart-image img {
-  max-width: 250px;
-  height: auto;
-}
-
+/* Colour marked text adjustment */
 .legend {
   display: flex;
   flex-direction: column;
@@ -90,19 +96,54 @@ body {
   display: inline-block;
 }
 
+/* Make the info section full width */
 .info {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
   background-color: #f9c468;
-  padding: 40px 20px;
-  gap: 20px;
+  padding: 60px 40px; /* Padding for better spacing between text and images */
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  box-sizing: border-box;
 }
 
-.info-block {
-  max-width: 300px;
+/* Each row of content text + image */
+.info-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
+/* Reverse direction for alternating layout */
+.info-row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Text area */
+.info-text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+/* Image area */
+.info-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Make image responsive and larger */
+.logo {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Footer adjustment */
 .footer {
   padding: 40px 20px;
   text-align: center;
@@ -110,13 +151,16 @@ body {
   font-style: italic;
 }
 
+/* Make bigger space between footer and quiz button */
 .quiz-button {
   margin-top: 20px;
+
 }
 
+/* Quiz button display and adjustment */
 .quiz-button a {
   background-color: #f37a1b;
-  color: white;
+  color: white; /* letters colour */
   padding: 12px 25px;
   text-decoration: none;
   font-weight: bold;
@@ -124,17 +168,24 @@ body {
   font-size: 16px;
 }
 
+/* Make it change colour when user goes mouse over the button */
 .quiz-button a:hover {
   background-color: #a44903;
 }
 
-/* Page 5 style.css */
-
-.header h1 {
-  font-size: 28px;
+/* Adjustment for "All rights reserved footer" */
+#footer {
+  background-color: white;
+  padding: 20px 0;
+  font-size: 14px;
   color: #333;
 }
 
+
+
+/* Statistics page style made by Nerijus Kmitas x24170232 */
+
+/* Setting the table over view - background colour, text colour, spacing */
 .hunger-stats {
   background-color: #f37a1b;
   padding: 20px;
@@ -142,9 +193,11 @@ body {
   text-align: center;
 }
 
+/* Table settings for the text colour, borders, backgrount colour inside the table */
 .hunger-stats table {
   width: 100%;
   background-color: #f9c468;
+  font-size: 20px;
   color: black;
   margin-top: 15px;
   border-collapse: collapse;
@@ -155,6 +208,7 @@ body {
   border: 1px solid white;
 }
 
+/* Interactive slide-section part: text colour, font size, spacing arrangment  */
 .slider-section {
   background-color: #f37a1b;
   padding: 30px 20px;
@@ -172,6 +226,7 @@ body {
   margin-top: 20px;
 }
 
+/* Interactive slide bar settings */
 input[type="range"] {
   width: 60%;
   margin: 10px;
@@ -182,13 +237,14 @@ input[type="range"] {
   font-weight: bold;
 }
 
+/* Adjustment for the last part of the page "Daily action you could take- from plate to planet" */
 .action {
   padding: 40px 20px;
   background-color: #f37a1b;
   color: black;
   text-align: center;
 }
-
+/* Adjusting and formating the boxes to fit even in the screen, changing background colour inside the boxes */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -204,13 +260,13 @@ input[type="range"] {
   font-weight: bold;
 }
 
-/* Page 2 Style */
+/* Quiz page style was made by Mateus Silva De Oliveira x23316748 */
 
 .quiz {
   text-align: center;
 }
 
-.quiz h1{
+.quiz h1 {
   font-size: 25px;
 }
 
@@ -273,4 +329,29 @@ input[type="range"] {
 
 #submitBTN:hover {
   background-color: #a44903;
+}
+
+
+
+
+
+
+
+
+/* To make it work on mobile phone */
+
+@media (max-width: 768px) {
+  .info-row {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .info-text,
+  .info-image {
+    max-width: 100%;
+  }
+
+  .chart-section {
+    gap: 60px;
+  }
 }
