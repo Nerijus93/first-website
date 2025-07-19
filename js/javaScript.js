@@ -27,6 +27,7 @@ if (slider && sliderValue && sliderText) {
   });
 }
 
+/* JavaScript for Page 2 */
 document.getElementById("submitBTN").addEventListener("click", function () {
   var answers = {
       q1: "10%",
