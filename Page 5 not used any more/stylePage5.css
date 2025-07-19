@@ -1,0 +1,75 @@
+/* Page 5 style.css */
+
+.header h1 {
+  font-size: 28px;
+  color: #333;
+}
+
+.hunger-stats {
+  background-color: #f37a1b;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.hunger-stats table {
+  width: 100%;
+  background-color: #f9c468;
+  color: black;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+.hunger-stats td {
+  padding: 15px;
+  border: 1px solid white;
+}
+
+.slider-section {
+  background-color: #f37a1b;
+  padding: 30px 20px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.slider-section .small {
+  font-size: 0.7em;
+  font-weight: normal;
+}
+
+.slider-container {
+  margin-top: 20px;
+}
+
+input[type="range"] {
+  width: 60%;
+  margin: 10px;
+}
+
+#sliderText {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.action {
+  padding: 40px 20px;
+  background-color: #f37a1b;
+  color: black;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #ffe1a0;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
