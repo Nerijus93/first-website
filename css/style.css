@@ -1,5 +1,7 @@
 /* Page 1 style.css 
-Home page and Statistics was made by Nerijus Kmitas x24170232*/
+Home page and Statistics page
+Made by: Nerijus Kmitas
+Student ID x24170232*/
 
 
 /* Base styling for every page */
@@ -182,86 +184,9 @@ body {
   color: #333;
 }
 
-
-
-/* Statistics page style made by Nerijus Kmitas x24170232 */
-
-/* Setting the table over view - background colour, text colour, spacing */
-.hunger-stats {
-  background-color: #f37a1b;
-  padding: 20px;
-  color: white;
-  text-align: center;
-}
-
-/* Table settings for the text colour, borders, backgrount colour inside the table */
-.hunger-stats table {
-  width: 100%;
-  background-color: #f9c468;
-  font-size: 20px;
-  color: black;
-  margin-top: 15px;
-  border-collapse: collapse;
-}
-
-.hunger-stats td {
-  padding: 15px;
-  border: 1px solid white;
-}
-
-/* Interactive slide-section part: text colour, font size, spacing arrangment  */
-.slider-section {
-  background-color: #f37a1b;
-  padding: 30px 20px;
-  text-align: center;
-  color: white;
-  font-size: 20px;
-}
-
-.slider-section .small {
-  font-size: 0.7em;
-  font-weight: normal;
-}
-
-.slider-container {
-  margin-top: 20px;
-}
-
-/* Interactive slide bar settings */
-input[type="range"] {
-  width: 60%;
-  margin: 10px;
-}
-
-#sliderText {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-/* Adjustment for the last part of the page "Daily action you could take- from plate to planet" */
-.action {
-  padding: 40px 20px;
-  background-color: #f37a1b;
-  color: black;
-  text-align: center;
-}
-/* Adjusting and formating the boxes to fit even in the screen, changing background colour inside the boxes */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.card {
-  background-color: #ffe1a0;
-  padding: 20px;
-  border-radius: 8px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-/* Quiz page style was made by Mateus Silva De Oliveira x23316748 */
+/* Quiz page style
+Made by: Mateus Silva De Oliveira 
+Student ID: x23316748 */
 
 .quiz {
   text-align: center;
@@ -332,15 +257,105 @@ input[type="range"] {
   background-color: #a44903;
 }
 
+/* Statistics page style
+Made by: Nerijus Kmitas 
+Student ID x24170232 */
 
+/* Setting the table over view - background colour, text colour, spacing */
+.hunger-stats {
+  background-color: #f37a1b;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
 
+/* Table settings for the text colour, borders, backgrount colour inside the table */
+.hunger-stats table {
+  width: 100%;
+  background-color: #f9c468;
+  font-size: 20px;
+  color: black;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
 
+.hunger-stats td {
+  padding: 15px;
+  border: 1px solid white;
+}
 
+/* Interactive slide-section part: text colour, font size, spacing arrangment  */
+.slider-section {
+  background-color: #f37a1b;
+  padding: 30px 20px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
 
+.slider-section .small {
+  font-size: 0.7em;
+  font-weight: normal;
+}
 
+.slider-container {
+  margin-top: 20px;
+}
+
+/* Interactive slide bar settings */
+input[type="range"] {
+  width: 60%;
+  margin: 10px;
+}
+
+#sliderText {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Style for the last part of the page "Daily action you could take- from plate to planet" */
+/* Shared Section Style */
+.action {
+  padding: 20px 20px;
+  background-color: #f37a1b;
+  color: black;
+  text-align: center;
+}
+
+/* Grid style used for both text and image rows */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto; /* center the grid */
+}
+
+/* Style for the action cards */
+.card {
+  background-color: #ffe1a0;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Style for each image container */
+.picture {
+  background-color: #ffe1a0;
+  padding: 5px 5px;
+  border-radius: 8px;
+}
+
+/* Make image responsive */
+.picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
 
 /* To make it work on mobile phone */
-
 @media (max-width: 768px) {
   .info-row {
     flex-direction: column !important;
@@ -354,5 +369,35 @@ input[type="range"] {
 
   .chart-section {
     gap: 60px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  .header-left {
+    position: static;
+    margin-bottom: 10px;
+  }
+
+  .mainLogo {
+    width: 70px;
+  }
+
+  .header-center h1 {
+    font-size: 22px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
   }
 }
